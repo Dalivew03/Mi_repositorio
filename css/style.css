@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(96, 93, 97);
+    font-size: medium;
+}
+
+
+.ejemplo {
+    border: 1px solid rgb(88, 52, 52);
+    margin: 6px;
+    background-color: rgb(250, 241, 241);
+    color: rgb(49, 86, 128);
+    width: 30%;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    font-size: 30px;
+}

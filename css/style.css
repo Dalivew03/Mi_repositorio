@@ -1,47 +1,42 @@
 body {
-    background-color: rgb(96, 93, 97);
-    font-size: medium;
-}
-
-
-.ejemplo {
-    border: 1px solid rgb(88, 52, 52);
-    margin: 6px;
-    background-color: rgb(250, 241, 241);
-    color: rgb(49, 86, 128);
-    width: 30%;
-    height: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    justify-content: center;
-    font-size: 30px;
-}
-
-.una-caja {
-    border: 2px solid rgb(0, 0, 0);
-    margin: 10px;
-    background-color: rgb(150, 150, 150);
-    padding: 10px;
-    width: 50%;
-    height: auto;
+    background-color: rgb(92, 81, 81);
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
     color: rgb(255, 255, 255);
     text-align: center;
+    
 }
 
-p {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-}
-
-a {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-}
-
-header {
-    background-color: rgb(64, 61, 61);
+.caja-link {
+    background-color: rgb(255, 255, 255);
+    color : rgb(37, 30, 30);
+    margin: 6px;
     padding: 10px;
+    width: 400px;
+    height: 20px;
+}
+
+#una-caja {
+    background-color: rgb(71, 23, 23);
+    color : rgb(209, 187, 187);
+    margin: 2px;
+    padding: 10px;
+    width: 200px;
+    height: 120px;
+}
+
+h2 {
+    color: rgb(54, 37, 129);
     text-align: center;
 }
+#pasos {
+    color: rgb(219, 167, 84);
+    font-family: italic;
+}
+#objetos {
+    color: rgb(91, 124, 255);
+    font-family: calibri;
+}
+  

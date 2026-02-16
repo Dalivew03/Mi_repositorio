@@ -6,21 +6,31 @@ body {
 h1 {
     color: rgb(255, 255, 255);
     text-align: center;
-    
+
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .caja-link {
     background-color: rgb(255, 255, 255);
-    color : rgb(37, 30, 30);
+    color: rgb(37, 30, 30);
     margin: 6px;
     padding: 10px;
-    width: 400px;
-    height: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;        
+    align-items: center;
 }
 
 #una-caja {
     background-color: rgb(71, 23, 23);
-    color : rgb(209, 187, 187);
+    color: rgb(209, 187, 187);
     margin: 2px;
     padding: 10px;
     width: 200px;
@@ -31,12 +41,41 @@ h2 {
     color: rgb(54, 37, 129);
     text-align: center;
 }
+
 #pasos {
     color: rgb(219, 167, 84);
     font-family: italic;
 }
+
 #objetos {
     color: rgb(91, 124, 255);
     font-family: calibri;
 }
-  
+
+#hover p.intento-hover:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 12px 15px 8px rgba(225, 153, 37, 0.944);
+}
+
+button {
+    background-color: rgb(66, 127, 57);
+    color: rgb(228, 11, 160);
+
+}
+
+| button:active {
+    background-color: rgb(228, 11, 160);
+    color: rgb(66, 127, 57);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="radio"]:focus,
+textarea[name="comentarios"]:focus {
+    border-color: aquamarine;
+    outline: olive;
+    color: sandybrown;
+    box-shadow: 10px 10px 5px rgba(13, 57, 53, 0.944);
+}
+

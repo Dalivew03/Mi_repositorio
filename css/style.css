@@ -9,15 +9,15 @@ h1 {
 
 }
 
-#principal {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.caja-link {
-    background-color: rgb(255, 255, 255);
-    color: rgb(37, 30, 30);
+.col-lg-2 {
+    background-color: rgb(251, 221, 221);
+    color: rgb(61, 20, 20);
     margin: 6px;
     padding: 10px;
     width: 300px;

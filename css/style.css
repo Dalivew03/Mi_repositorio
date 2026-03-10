@@ -1,81 +1,83 @@
 body {
-    background-color: rgb(92, 81, 81);
-    font-family: 'Poppins', sans-serif;
+    background-color:#c9a845;
+    color: #1c1c1c;
+    font-family: 'roboto', sans-serif;
+}
+
+
+nav {
+    border-bottom: 1px solid #1a1a1a; 
+    padding: 10px; 
+    transition: all 0.3s ease;
+    background-color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 3px; 
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    color: #a0a0a0;
+}
+
+.nav-link:hover {
+    color: #ffffff; 
+    transition: color 0.5s ease;
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
+.navbar-toggler:hover{
+    color : #ffffff;
+    transition: color 5s ease;
+}
+
+header {
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
 }
 
 h1 {
+    font-size: 4rem;
+    font-weight: 900;
     color: rgb(255, 255, 255);
-    text-align: center;
-
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 4px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-lg-2 {
-    background-color: rgb(251, 221, 221);
-    color: rgb(61, 20, 20);
-    margin: 6px;
-    padding: 10px;
-    width: 300px;
-    height: 40px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;        
-    align-items: center;
-}
-
-#una-caja {
-    background-color: rgb(71, 23, 23);
-    color: rgb(209, 187, 187);
-    margin: 2px;
-    padding: 10px;
-    width: 200px;
-    height: 190px;
-}
-
-h2 {
-    color: rgb(54, 37, 129);
-    text-align: center;
-}
-
-#pasos {
-    color: rgb(219, 167, 84);
-    font-family: italic;
-}
-
-#objetos {
-    color: rgb(91, 124, 255);
-    font-family: calibri;
-}
-
-#hover p.intento-hover:hover {
-    background-color: rgb(255, 0, 0);
+#young h1.hover:hover {
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    box-shadow: 12px 15px 8px rgba(225, 153, 37, 0.944);
+    box-shadow: 12px 15px 8px rgba(58, 5, 5, 0.944);
+    transition: all 1s ease;
+    overflow: hidden;
 }
 
-button {
-    background-color: rgb(66, 127, 57);
-    color: rgb(228, 11, 160);
-
+p {
+    font-size: 2rem;
+    font-style: oswald, sans-serif;
+    color: #333333;
+    margin-top: 20px;
+    padding: 4px;
 }
 
-| button:active {
-    background-color: rgb(228, 11, 160);
-    color: rgb(66, 127, 57);
-}
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="radio"]:focus,
-textarea[name="comentarios"]:focus {
-    border-color: aquamarine;
-    outline: olive;
-    color: sandybrown;
-    box-shadow: 10px 10px 5px rgba(13, 57, 53, 0.944);
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
 }
-

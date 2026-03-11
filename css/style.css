@@ -130,4 +130,42 @@ nav .nav-link:hover::after {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+.eps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.eps-card:hover .eps-img-container img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.eps-card:hover .eps-overlay {
+  opacity: 1;
+}
+.eps-card .eps-img-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+  border-radius: 4px;
+}
+.eps-card .eps-img-container img {
+  transition: transform 0.5s ease;
+  filter: grayscale(30%);
+}
+.eps-card .eps-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }/*# sourceMappingURL=style.css.map */

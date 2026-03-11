@@ -1,300 +1,133 @@
 body {
-    background-color: #fec61da4;
-    color: #1c1c1c;
-    font-family: 'roboto', sans-serif;
+  background-color: rgba(254, 198, 29, 0.6431372549);
+  color: #1c1c1c;
+  font-family: "roboto", sans-serif;
 }
-
 
 nav {
-    border-bottom: 1px solid #1a1a1a;
-    padding: 10px;
-    transition: all 0.3s ease;
-    background-color: #000000;
-    display: flex;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #000000;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 10px;
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: all 0.3s ease;
 }
-
-.navbar-brand {
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
+nav .navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
-.nav-link {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    margin-left: 15px;
-    color: #a0a0a0;
+nav .nav-link {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-left: 15px;
+  position: relative;
 }
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    transition: background-color 0.4s ease;
-    display: flex;
-    flex-direction: row;
+nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #dc3545;
+  transition: width 0.3s ease;
 }
-
-.nav-link {
-    position: relative;
-    color: #fff;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #dc3545;
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
-
-.navbar-toggler {
-    border: none;
-    box-shadow: none;
-}
-
-
-header {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+nav .nav-link:hover::after {
+  width: 100%;
 }
 
 .hero-header {
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #000;
-    overflow: hidden;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000000;
+  overflow: hidden;
 }
-
-
-.young-kings-title {
-    font-size: clamp(3rem, 10vw, 6rem);
-    font-weight: 900;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: -2px;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: default;
-    margin-bottom: 0;
+.hero-header .young-kings-title {
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+  margin-bottom: 0;
 }
-
-
-.young-kings-title:hover {
-    color: #ffffff;
-    text-shadow:
-        5px 5px 0px #741111,
-        -5px -5px 0px #222;
-    transform: scale(1.05) rotate(-1deg);
+.hero-header .young-kings-title:hover {
+  text-shadow: 5px 5px 0px #741111, -5px -5px 0px #222;
+  transform: scale(1.05) rotate(-1deg);
 }
-
-
-.subtitle-container {
-    margin-top: 10px;
-}
-
-.tagline {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
-    color: #a9a9a9;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin: 5px 0;
-}
-
-.highlight {
-    color: #fff;
-    font-weight: 300;
-    border-top: 1px solid #333;
-    display: inline-block;
-    padding-top: 10px;
-}
-
-.section-title {
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #fff;
-    border-left: 5px solid #fff;
-    padding-left: 15px;
-    display: inline-block;
-}
-
 
 .albums-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 20px 0;
-}
-
-
-.album-img-container {
-    position: relative;
-    overflow: hidden;
-    background-color: #000;
-    border-radius: 4px;
-}
-
-.album-img-container img {
-    transition: transform 0.5s ease;
-    filter: grayscale(30%);
-}
-
-.album-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.btn-escuchar {
-    border: 1px solid #fff;
-    padding: 10px 20px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 2px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
 }
 
 .album-card:hover .album-img-container img {
-    transform: scale(1.1);
-    filter: grayscale(0%);
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
-
 .album-card:hover .album-overlay {
-    opacity: 1;
+  opacity: 1;
 }
-
-.album-name {
-    margin-top: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #e0e0e0;
-    font-size: 0.9rem;
+.album-card .album-img-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+  border-radius: 4px;
+}
+.album-card .album-img-container img {
+  transition: transform 0.5s ease;
+  filter: grayscale(30%);
+}
+.album-card .album-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .footer-custom {
-    background-color: #000;
-    color: #666;
-    padding: 40px 0;
-    text-align: center;
-    border-top: 1px solid #1a1a1a;
+  background-color: #000000;
+  color: #666;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid #1a1a1a;
 }
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    filter: brightness(0.7);
+.footer-custom .social-icon {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0.7);
+  transition: all 0.3s ease;
 }
-
-.social-icon:hover {
-    transform: translateY(-5px);
-    filter: brightness(1);
+.footer-custom .social-icon:hover {
+  transform: translateY(-5px);
+  filter: brightness(1);
 }
-
-.footer-text {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 20px;
+.footer-custom .github-link {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  transition: color 0.3s;
 }
-
-.github-link {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #fff;
-    transition: color 0.3s;
-}
-
-.github-link:hover {
-    color: #ff0000;
-    border-color: #ff0000;
-}
-
-
-.bio-collage {
-    position: relative;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-.img-main {
-    position: relative;
-    z-index: 2;
-    transition: transform 0.3s ease;
-}
-
-.img-secondary {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 60%;
-    z-index: 1;
-    border: 5px solid #000;
-    box-shadow: -10px 10px 0px rgba(255, 0, 0, 0.3);
-}
-
-.img-main:hover {
-    transform: scale(1.02);
-}
-
-.text-secondary {
-    color: #a0a0a0;
-    line-height: 1.8;
-}
-
-.tracking-wide {
-    letter-spacing: 3px;
-}
-
-#text-secondary {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #000000;
-}
-
-.eps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 20px 0;
-}
-
-.form-control {
-background-color: #1a1a1a;
-border: 1px solid #333;
-color: #fff;
-}
-
-
-.form-control:focus {
-background-color: #1a1a1a;
-color: #fff;
-border-color: #dc3545;
- box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
-}
+.footer-custom .github-link:hover {
+  color: #dc3545;
+  border-color: #dc3545;
+}/*# sourceMappingURL=style.css.map */

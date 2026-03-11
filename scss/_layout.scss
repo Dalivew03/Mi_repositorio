@@ -1,0 +1,102 @@
+// 3. NAVEGACIÓN (Anidamiento puro)
+nav {
+    background-color: $color-black;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 10px;
+    display: flex;
+    font-family: $font-system;
+    transition: $transition-smooth;
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        color: $color-white;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-left: 15px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $color-accent;
+            transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+// 4. HERO SECTION
+.hero-header {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $color-black;
+    overflow: hidden;
+
+    .young-kings-title {
+        font-size: clamp(3rem, 10vw, 6rem);
+        font-weight: 900;
+        color: $color-white;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: default;
+        margin-bottom: 0;
+
+        &:hover {
+            text-shadow: 5px 5px 0px #741111, -5px -5px 0px #222;
+            transform: scale(1.05) rotate(-1deg);
+        }
+    }
+}
+
+// 6. FOOTER
+.footer-custom {
+    background-color: $color-black;
+    color: $color-text-muted;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        filter: brightness(0.7);
+        transition: $transition-smooth;
+
+        &:hover {
+            transform: translateY(-5px);
+            filter: brightness(1);
+        }
+    }
+
+    .github-link {
+        color: $color-white;
+        text-decoration: none;
+        border-bottom: 1px solid $color-white;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $color-accent;
+            border-color: $color-accent;
+        }
+    }
+}

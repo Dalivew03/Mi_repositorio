@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myke Towers | Fan site</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
 
@@ -15,64 +17,73 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">MYKE TOWERS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/biografia.html">Biografía</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/discografia.html">Discografía</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/tours.html">Tours</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="">
-        
-        <div id="young">
-            <h1 class="hover">EL YOUNG KINGS</h1>
-
-            <p>El fenómeno de la música urbana</p>
-            <p>El que no ve a nadie como competencia</p>
-
+<header class="hero-header">
+    <div id="young" class="content-box">
+        <h1 class="young-kings-title">EL YOUNG KINGS</h1>
+        <div class="subtitle-container">
+            <p class="tagline">El fenómeno de la música urbana</p>
+            <p class="tagline highlight">El que no ve a nadie como competencia</p>
         </div>
-    </header>
+    </div>
+</header>
 
     <main id="latest" class="container my-5">
-        <h2 class="text-center mb-5">Mejores Lanzamientos</h2>
+        <h2 class="section-title text-center mb-5">Últimos Lanzamientos</h2>
 
-        <div class="grid-container">
+        <div class="albums-grid">
+            
+            <article class="album-card">
+                <div class="album-img-container">
+                    <img src="./assets/img/island boyz.jpg" alt="Álbum ISLAND BOYZ" class="img-fluid">
+                    <div class="album-overlay">
+                        <a href="https://open.spotify.com/intl-es/album/3YC3UkufiKRSwdBA1BDfHj?si=Zj7UjVDdQnKVanCSSJ_iOQ"
+                            target="_blank" class="btn-escuchar">Escuchar ahora</a>
+                    </div>
+                </div>
+                <p class="album-name">ISLAND BOYZ</p>
+            </article>
 
-            <div class="grid-item card-hover">
+            <article class="album-card">
+                <div class="album-img-container">
+                    <img src="./assets/img/lyke miike (deluxe).jpg" alt="Álbum LYKE MIIKE" class="img-fluid">
 
-                <img src="./assets/img/easy money baby.jpg" alt="Álbum Easy Money Baby" class="img-fluid">
-                <p>Easy Money Baby</p>
-
-            </div>
-            <div class="grid-item card-hover">
-
-                <img src="./assets/img/" alt="Álbum La Pantera Negra" class="img-fluid">
-                <p>La Pantera Negra</p>
-
-            </div>
-            </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Myke Towers Proyecto fan | <a href="https://github.com/tu-usuario" class="text-white">GitHub</a></p>
-
-        <div>
-            <a href="https://www.instagram.com/myketowers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"> 
-                <img src="./assets/img/Logo IG.png" alt="Instagram">
-            </a>
+                    <div class="album-overlay">
+                        <a href="https://open.spotify.com/intl-es/album/27bcWf41ghwRCrfTS1OjXj?si=U7gc_C8nQbeZIWeMHNY9gA"
+                            target="_blank" class="btn-escuchar">Escuchar ahora</a>
+                    </div>
+                </div>
+                <p class="album-name">LYKE MIIKE (DELUXE EDITION)</p>
+            </article>
 
         </div>
-    </footer>
+    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="footer-custom">
+    <div class="container">
+        <div class="social-links mb-3">
+            <a href="https://www.instagram.com/myketowers" target="_blank" aria-label="Instagram">
+                <img src="./assets/img/Logo IG.png" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+        
+        <p class="footer-text">
+            &copy; 2026 Myke Towers Proyecto Fan | Creado por 
+            <a href="https://github.com/Dalivew03" class="github-link" target="_blank">Dalivew03</a>
+        </p>
+    </div>
+</footer>
+
 </body>
+
 </html>

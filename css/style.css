@@ -41,6 +41,19 @@ h2::after {
   margin-bottom: 3rem;
 }
 
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+h3.eps-title {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
 nav {
   background-color: #000000;
   border-bottom: 1px solid #1a1a1a;
@@ -153,6 +166,12 @@ nav .nav-link:hover::after {
   padding: 20px 0;
 }
 
+.album-card .album-name {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #ddd;
+  transition: color 0.3s;
+}
 .album-card:hover .album-img-container img {
   transform: scale(1.1);
   filter: grayscale(0%);
@@ -167,10 +186,14 @@ nav .nav-link:hover::after {
   border-radius: 4px;
 }
 .album-card .album-img-container img {
-  transition: transform 0.5s ease;
-  filter: grayscale(30%);
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-.album-card .album-overlay {
+
+.album-card:hover .album-img-container img {
+  transform: scale(1.15) rotate(2deg);
+}
+
+.album-overlay {
   position: absolute;
   top: 0;
   left: 0;

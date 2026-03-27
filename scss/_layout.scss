@@ -69,7 +69,7 @@ nav {
 
 @media (max-width: 991.98px) {
     .navbar-collapse {
-        background-color: #111; /* Fondo un poco más claro que el nav */
+        background-color: #111111; /* Fondo un poco más claro que el nav */
         margin-top: 10px;
         padding: 20px;
         border-radius: 10px;
@@ -79,28 +79,9 @@ nav {
 
     .nav-link {
         margin: 10px 0;
-        font-size: 1.2rem !important;
+        font-size: 1.2rem;
     }
 }
-
-/* Personalización del botón Toggler */
-.navbar-toggler {
-    border: 1px solid #741111; 
-    padding: 0.25rem 0.5rem;
-}
-
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
-    outline: none;
-}
-
-
-.navbar-toggler-icon {
-     filter: invert(1); 
-    background-color: #dc3545;
-}
-
-
 
 
 .navbar {

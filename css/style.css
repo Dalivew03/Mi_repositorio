@@ -122,7 +122,7 @@ nav .nav-link:hover::after {
     margin-top: 10px;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #dc3545;
+    border: 1px solid #000000;
     text-align: center;
   }
   .nav-link {
@@ -131,8 +131,8 @@ nav .nav-link:hover::after {
   }
 }
 :hover .navbar-toggler {
-  border: none;
-  background: #dc3545;
+  border: 2px solid #ffffff;
+  background: #000000;
   color: #ffffff;
   font-size: 1.5rem;
 }

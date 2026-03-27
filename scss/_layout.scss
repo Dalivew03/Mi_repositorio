@@ -68,6 +68,25 @@ nav {
 }
 
 
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+    
+    filter: invert(1); 
+}
+
+
+.navbar {
+    background-color: #000000;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    transition: all 0.3s ease;
+}
+
+
 .footer-custom {
     background-color: #000; // Fondo negro sólido para elegancia
     padding: 40px 0;

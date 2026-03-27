@@ -131,26 +131,21 @@ nav .nav-link:hover::after {
     font-size: 1.2rem !important;
   }
 }
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    background-color: #111; /* Fondo un poco más claro que el nav */
-    margin-top: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #dc3545;
-    text-align: center;
-  }
-  .nav-link {
-    margin: 10px 0;
-    font-size: 1.2rem !important;
-  }
-}
+/* Personalización del botón Toggler */
 .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.5);
+  border: none; /* Quitamos el borde cuadrado */
+  padding: 0.25rem 0.5rem;
 }
 
+.navbar-toggler:focus {
+  box-shadow: none; /* Quitamos el resplandor azul al hacer clic */
+  outline: none;
+}
+
+/* Cambiar el color de las líneas (hamburguesa) a Rojo Myke Towers */
 .navbar-toggler-icon {
   filter: invert(1);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(220, 53, 69, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 .navbar {

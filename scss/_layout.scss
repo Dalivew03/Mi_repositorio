@@ -83,10 +83,21 @@ nav {
     }
 }
 :hover .navbar-toggler {
-    border: 2px solid $color-white;
+    border: 1px solid $color-white;
     background: #000000;
     color: $color-white;
     font-size: 1.5rem;
+    
+} .navbar-toggler-link {
+    color: $color-white;
+    text-decoration: none;
+    border-bottom: 1px solid $color-white;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $color-accent;
+        border-color: $color-accent;
+    }
 }
 
 

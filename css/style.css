@@ -131,10 +131,21 @@ nav .nav-link:hover::after {
   }
 }
 :hover .navbar-toggler {
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   background: #000000;
   color: #ffffff;
   font-size: 1.5rem;
+}
+
+.navbar-toggler-link {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  transition: color 0.3s;
+}
+.navbar-toggler-link:hover {
+  color: #dc3545;
+  border-color: #dc3545;
 }
 
 .navbar {
